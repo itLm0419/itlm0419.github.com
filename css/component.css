@@ -1,0 +1,139 @@
+/* grid */
+.grid {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	width: 100%;
+}
+
+.grid li {
+	position: relative;
+	float: left;
+    width: 150px;
+    height: 100px;
+}
+
+/* Common styles for the letters */
+.grid li span {
+    height: 100%;
+    width: 100%;
+	display: inline-block;
+	font-weight: bold;
+    font-size: 60px;
+    line-height: 80px;
+	text-align: center;
+	line-height: 1.5; /*控制抬起的高度*/
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 550px;
+	-ms-perspective: 550px;
+	perspective: 550px;
+	z-index: 1;
+}
+
+.grid li span:before,
+.grid li span:after {
+	position: absolute;
+	content: attr(data-letter);
+	line-height: inherit;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.grid li span:before {
+	text-shadow: none;
+	color: hsla(0, 0%, 0%, 0.12);
+}
+
+
+/* .ot-letter-right { background: #ea6657; } */
+
+.ot-letter-right span { text-shadow: 1px 4px 6px #ea6657, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #ea6657; }
+.ot-letter-right span:after { color: #ea6657; }
+.ot-letter-right:hover span:after { color: #ed7a6e; }
+
+/* Right */
+.ot-letter-right span:before,
+.ot-letter-right span:after {
+	-webkit-transform-origin: 100% 50%;
+	-ms-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+
+.ot-letter-right span:before {
+	-webkit-transform: scale(0.85,1) skew(0deg,1deg);
+	-ms-transform: scale(0.85,1) skew(0deg,1deg);
+	transform: scale(0.85,1) skew(0deg,1deg);
+}
+
+.ot-letter-right span:after {
+	text-shadow: 1px 0px 0px hsla(360, 100%, 100%, 0.1), -3px 0px 1px hsla(0, 0%, 0%, 0.4);
+	-webkit-transform: rotateY(15deg);
+	-ms-transform: rotateY(15deg);
+	transform: rotateY(15deg);
+}
+
+.ot-letter-right:hover span:before {
+	-webkit-transform: scale(0.85,1) skew(0deg,-20deg);
+	-ms-transform: scale(0.85,1) skew(0deg,-20deg);
+	transform: scale(0.85,1) skew(0deg,-20deg);
+}
+
+.ot-letter-right:hover span:after {
+	-webkit-transform: rotateY(40deg);
+	-ms-transform: rotateY(40deg);
+	transform: rotateY(40deg);
+}
+
+
+
+/* Example for media query: change number of items per row */
+@media screen and (max-width: 1190px) {
+	.grid li {
+		width: 20%;
+		/* Fallback */
+		width: -webkit-calc(100% / 5);
+		width: calc(100% / 5);
+	}
+}
+
+@media screen and (max-width: 945px) {
+	.grid li {
+		width: 25%;
+		/* Fallback */
+		width: -webkit-calc(100% / 4);
+		width: calc(100% / 4);
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.grid li {
+		width: 33.3333333%;
+		/* Fallback */
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.grid li {
+		width: 50%;
+		/* Fallback */
+		width: -webkit-calc(100% / 2);
+		width: calc(100% / 2);
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.grid li {
+		width: 100%;
+	}
+}

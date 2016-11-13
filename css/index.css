@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+    padding:0;
+    color:#fff;
+}
+h3{
+    color: #fff;
+    font-size: 30px;
+}
+header{
+    background: rgba(0 0 0,0.1);
+}
+.Nav{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    z-index: 20;
+}
+.Nav ul{
+    width: 100%;
+    height: 100%;
+}
+.Nav ul li{
+    width: 20%;
+    height: 100%;
+    float: left;
+ 
+    -webkit-box-sizing: border-box;
+    -webkit-perspective:800px;
+}
+.Nav ul li a{
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: center center -40px;
+}
+.Nav ul li a span{
+    width: 100%;
+    height: 100%;
+    background: rgba(43,42,42,0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+    -webkit-transition: 1s all ease;
+    -webkit-backface-visibility: hidden;
+}
+.Nav ul li a span:nth-of-type(1){
+    top: -100%;
+    -webkit-transform: rotateX(90deg);
+    -webkit-transform-origin: bottom;
+}
+
+.Nav ul li a span:nth-of-type(3){
+    top: 100%;
+    -webkit-transform-origin: top;
+    -webkit-transform: rotateX(-90deg);
+}
+.Nav ul li a:hover,.Nav ul li a:focus{
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+#banner{
+    background: transparent;
+    height:700px;
+}
+#banner .inner{
+    max-width:300px;
+    text-align: center;
+    margin:0 auto;
+    position: relative;
+    top:235px;
+    left:0;
+    -webkit-transition:1s all ease 2s;
+}
+
+#banner .inner .link
+{
+    border:none;
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    background: #18a;
+    border-radius: 10px;
+    line-height: 40px;
+    margin-left:125px;
+}
+#banner .link a{
+    font-size: 20px;
+    color:#eee;
+}
+.button2{
+    border: 2px solid dodgerblue;
+    background: #252f30;
+    margin-top: 15px;
+    margin-left: 150px;
+}
+.button3{
+    margin-top: 50px;
+    border: 2px solid dodgerblue;
+    background: #252f30;
+}
+.linkMe{
+    height: 340px;
+    width: 400px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-170px;
+    margin-top:100px;
+    display: none;
+}
+.linkMe ul{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    left:0;
+    top:0;
+    overflow: hidden;
+}
+.linkMe ul li{
+    height: 100px;
+    width: 100px;
+    margin:10px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    opacity: 0;
+}
+.linkMe ul li span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:-100px;
+    top:0;
+    color:#fff;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 100px;
+    overflow: hidden;
+    background:rgba(0,0,0,0.5);
+}
+.linkMe ul li span img,.linkMe ul li img{
+    height: 100%;
+    width: 100%;
+}
+.inner .p1{
+    line-height: 35px;
+    color:#fff;
+}
+.section1{
+    text-align: center;
+    background-color: #089db0;
+    height: 700px;
+    padding:50px;
+}
+.group{
+    margin-top: 30px;
+}
+.section1 h2,.main .showh3{
+    font-family: '微软雅黑';
+    padding-top:20px;
+    font-size: 25px;
+    color:white;
+}
+.section2 .img-section{
+    width:45%;
+}
+.img-section img{
+    width:100%;
+}
+
+.article{
+    background: #252f34;
+    color: #fff;
+}
+.img-section{
+    float: left;
+
+}
+.img-section img{
+    height:351.9px;
+}
+.text-section{
+    height:351.9px;
+    background: #252f30;
+    float:right;
+    width: 55%;
+    letter-spacing: 1px;
+}
+.text-section h2,p{
+    padding-top:10px;
+    padding-left: 20px;
+}
+.card{
+    float: left;
+    width: 50%;
+    min-height: 300px;
+    padding: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+.wrapper{
+    max-width: 1080px;
+    margin: 0 auto;
+    color:black;
+}
+.main{
+   /*  background: #444 url(../images/3.jpg);*/
+   background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main .nav .one{
+    background-color: rgba(6, 3, 4, 0.7);
+}
+.main .nav .add{
+     background:url(../images/icon4.jpg);
+}
+.group img{
+    width:80px;
+    height:80px;
+}
