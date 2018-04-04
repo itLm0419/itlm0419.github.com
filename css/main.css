@@ -66,6 +66,7 @@ div,td{ word-wrap: break-word;}
    width: 200px;
    height:200px;
    background:url(../images/me.png) 10px 5px no-repeat;
+   background-size:100% ;
 }
 .gridMenu .about-me-body .about{ float: left; width:180px; padding:0 9px; color:#666;}
 .gridMenu .about-me-body p{ text-indent:25px;font-weight: bold;line-height: 25px;}
