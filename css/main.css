@@ -59,9 +59,14 @@ div,td{ word-wrap: break-word;}
 .gridMenu .about-me{background:#828282;}
 .gridMenu .about-me p{color:#ccc;font-size:18px; line-height: 25px; font-weight: bold;}
 .gridMenu .about-me .close{ background: url(../images/close.png) center center no-repeat #5c5c5c;}
-.gridMenu .about-me .small-thumb{ background:url(../images/ico-8.png) 0 -650px no-repeat;}
 
-.gridMenu .about-me-body .me{ float:left; width: 200px; height:200px; background:url(../images/me.png) 10px 5px no-repeat;}
+
+.gridMenu .about-me-body .me{
+   float:left;
+   width: 200px;
+   height:200px;
+   background:url(../images/me.png) 10px 5px no-repeat;
+}
 .gridMenu .about-me-body .about{ float: left; width:180px; padding:0 9px; color:#666;}
 .gridMenu .about-me-body p{ text-indent:25px;font-weight: bold;line-height: 25px;}
 .gridMenu .about-me-body .name{ display: inline-block; margin:15px 0 0 0; font-size:15px;}
@@ -74,16 +79,15 @@ div,td{ word-wrap: break-word;}
 
 .gridMenu .link{ background:#92c469;}
 .gridMenu .link .close{ background: url(../images/close.png) center center no-repeat #92c469;}
-.gridMenu .link .small-thumb{ background:url(../images/ico-8.png) 0 -600px no-repeat;}
  
 .gridMenu .link .qq-weibo{ top:0; left:100px;} 
 .gridMenu .link .qq-weibo a{ background:url(../images/face.jpg); background-size: 100%;}
 .gridMenu .link .blog-works{ top:-100px; left:0;}
-.gridMenu .link .blog-works a{   background:url(../images/gridmenu-child_02.png);}
+.gridMenu .link .blog-works a{   background:url(../images/m.jpg);}
 
 .gridMenu .blog{ background:#d77075;} 
 .gridMenu .blog .close{ background: url(../images/close.png) center center no-repeat #d77075;}
-.gridMenu .blog .small-thumb{ background:url(../images/ico-8.png) 0 -750px no-repeat;}
+
 
 .gridMenu .blog .travel-photography{ top:-100px; left:0;}
 .gridMenu .blog .travel-photography a{ background:url(../images/icon3.jpg);}
@@ -100,11 +104,9 @@ div,td{ word-wrap: break-word;}
 
 .gridMenu .contact-me{ background:#e2a24e;}
 .gridMenu .contact-me .close{ background: url(../images/close.png) center center no-repeat #e2a24e;}
-/*.gridMenu .contact-me .small-thumb{ background:url(../images/ico-8.png) 0 -700px no-repeat;}*/
 
 .gridMenu .qq{ vertical-align:middle; display:inline-block;font-size:0;  text-indent:-9999px; width:21px; height:21px; background:url("http://wpa.qq.com/imgd?IDKEY=6d889076c98c7e3056c9940574bd1c8a68b6e217f07bd2db&pic=45");}
 
 .gridMenu .weibo{ vertical-align:middle; width:21px; height:21px; display:inline-block; font-size:0; text-indent:-9999px;}
-/*.gridMenu .weibo.tencent{ background:url(../images/ico-8.png) no-repeat;}
-.gridMenu .weibo.sina{ width:26px; background:url(../images/ico-8.png) -50px 0 no-repeat;}*/
+
 .gridMenu .effects-explode{position: absolute;overflow: hidden;}

@@ -71,7 +71,7 @@ window.onload = function(){
     var oLink=document.getElementById('link');
     var lock=true;
     var timer=null;
-    oLink.onclick=function(){
+    /*oLink.onclick=function(){
         if(lock){
             oLinkMe.style.display='block';
             for(var i=0;i<aLi.length;i++){
@@ -89,5 +89,5 @@ window.onload = function(){
             }
         }
        lock=!lock;
-    }
+    }*/
 };
